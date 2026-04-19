@@ -8,8 +8,8 @@ import (
 
 	"github.com/golang-jwt/jwt/v5"
 	auth "github.com/zzliekkas/flow-auth"
-	"github.com/zzliekkas/flow/v2"
-	"github.com/zzliekkas/flow/v2/middleware"
+	"github.com/zzliekkas/flow/v3"
+	"github.com/zzliekkas/flow/v3/middleware"
 )
 
 // TokenBlacklist 定义令牌黑名单接口

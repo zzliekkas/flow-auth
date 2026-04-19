@@ -1,7 +1,7 @@
 package social
 
 import (
-	"github.com/zzliekkas/flow/v2"
+	"github.com/zzliekkas/flow/v3"
 )
 
 // UserMapper 用户映射器接口

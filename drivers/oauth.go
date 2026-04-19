@@ -5,14 +5,14 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"io/ioutil"
+	"io"
 	"net/http"
 	"net/url"
 	"strings"
 	"time"
 
-	"github.com/zzliekkas/flow/v2"
-	"github.com/zzliekkas/flow-auth"
+	auth "github.com/zzliekkas/flow-auth"
+	"github.com/zzliekkas/flow/v3"
 )
 
 // OAuth2Config OAuth2配置
@@ -136,7 +136,7 @@ func (p *OAuth2Provider) ExchangeCode(code string) (*OAuth2Token, error) {
 		return nil, fmt.Errorf("OAuth2 token exchange failed: %s", resp.Status)
 	}
 
-	body, err := ioutil.ReadAll(resp.Body)
+	body, err := io.ReadAll(resp.Body)
 	if err != nil {
 		return nil, err
 	}
@@ -171,7 +171,7 @@ func (p *OAuth2Provider) GetUserInfo(token *OAuth2Token) (map[string]interface{}
 		return nil, fmt.Errorf("Failed to get user info: %s", resp.Status)
 	}
 
-	body, err := ioutil.ReadAll(resp.Body)
+	body, err := io.ReadAll(resp.Body)
 	if err != nil {
 		return nil, err
 	}
@@ -319,7 +319,7 @@ func (p *OAuth2Provider) RefreshToken(ctx context.Context, tokenString string) (
 		return "", fmt.Errorf("刷新令牌失败: %s", resp.Status)
 	}
 
-	body, err := ioutil.ReadAll(resp.Body)
+	body, err := io.ReadAll(resp.Body)
 	if err != nil {
 		return "", err
 	}

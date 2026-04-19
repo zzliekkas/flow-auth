@@ -7,7 +7,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/zzliekkas/flow/v2"
+	"github.com/zzliekkas/flow/v3"
 )
 
 // 添加缺失的错误常量
