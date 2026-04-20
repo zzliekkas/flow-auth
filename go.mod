@@ -1,4 +1,4 @@
-module github.com/zzliekkas/flow-auth
+module github.com/zzliekkas/flow-auth/v3
 
 go 1.23.0
 

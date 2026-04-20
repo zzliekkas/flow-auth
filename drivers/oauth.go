@@ -11,7 +11,7 @@ import (
 	"strings"
 	"time"
 
-	auth "github.com/zzliekkas/flow-auth"
+	auth "github.com/zzliekkas/flow-auth/v3"
 	"github.com/zzliekkas/flow/v3"
 )
 

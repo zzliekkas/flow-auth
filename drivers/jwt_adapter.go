@@ -7,7 +7,7 @@ import (
 	"time"
 
 	"github.com/golang-jwt/jwt/v5"
-	auth "github.com/zzliekkas/flow-auth"
+	auth "github.com/zzliekkas/flow-auth/v3"
 	"github.com/zzliekkas/flow/v3"
 	"github.com/zzliekkas/flow/v3/middleware"
 )

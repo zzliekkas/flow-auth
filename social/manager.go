@@ -8,7 +8,7 @@ import (
 	"sync"
 
 	"github.com/zzliekkas/flow/v3"
-	"github.com/zzliekkas/flow-auth/oauth"
+	"github.com/zzliekkas/flow-auth/v3/oauth"
 )
 
 // Provider 社交登录提供者接口

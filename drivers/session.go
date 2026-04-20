@@ -7,7 +7,7 @@ import (
 	"time"
 
 	"github.com/zzliekkas/flow/v3"
-	"github.com/zzliekkas/flow-auth"
+	"github.com/zzliekkas/flow-auth/v3"
 )
 
 // SessionStorage 定义会话存储接口
